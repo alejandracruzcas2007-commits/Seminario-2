@@ -1,0 +1,35 @@
+body {
+         background-image: url(C:/AppServ/www/AleCruz_Seminario/imagenes/7710074.jpg);
+         background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+        text-decoration: double;
+        background-color: #612306ef;
+        color: #9b0303c0;
+    }
+
+nav {
+ height: 1000px;
+}
+ .titulo{
+    font-family: Goudy Stout 200% cursive;
+    text-overflow: ellipsis;
+ }
+
+    footer {
+         clear: both;
+        text-align: center;
+        background-color: #f5dd04ef;
+        font-weight: 600;
+        font-size: 15px;
+        color: rgb(56, 2, 2); 
+
+    }

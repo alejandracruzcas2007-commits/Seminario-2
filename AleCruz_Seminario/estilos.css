@@ -1,0 +1,62 @@
+body{
+    background-color: #612908;
+
+}
+header{
+    padding: 12px;
+    text-align:center;
+    background-color: #e6f329;
+    color: #ee520a;
+    
+}
+
+nav{
+    height: 1000px;
+}
+
+table {
+padding: 15px;
+text-align:center;
+width: 100%; 
+height: 500px;
+border-collapse: collapse; 
+}
+
+.titulo{font: ayr saturday nigth 120% cursive;
+}
+
+.niñosp{
+display: block;
+margin: 0 auto;
+
+}
+
+
+
+.ch{
+background-color: #f6aa90;
+
+
+}
+
+.yu{
+background-color:#d5b6d5 ;
+}
+
+.wo{
+background-color: #f6b4bf;
+}
+
+
+.mi{
+background-color:#9bd0b7;
+}
+
+
+.re{
+background-color: #f8df81;
+}
+
+a {
+    text-decoration: none;
+}

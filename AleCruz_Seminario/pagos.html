@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos digitales</title>
+    <link rel="icon" href="imagenes/Taco de pastor.png" type="imagen/png">
+    
+    <style>
+       body {
+            background-color:#612908;
+            margin: 12px;
+            padding: 20px;
+        }
+        header {
+             padding: 12px;
+            text-align:center;
+            background-color: #e6f329a6;
+            color: #9c3404;
+        }
+        main {
+            padding: 10px;
+            text-align:center;
+            background-color: white;
+            color: black;
+        }
+
+        nav a:hover{
+            color: purple;
+            font-weight:bold;
+        }
+
+        main{
+            overflow: hidden;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .tips-container, .wholesale-tips-container, .product {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Añade sombra */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .tips-container, .wholesale-tips-container {
+            width: 30%;
+            background-color: #f6b4bf;
+            font-size: 20px;
+        }
+
+        .tips-container:hover, .wholesale-tips-container:hover {
+            background-color: #ff96a8;
+        }
+
+        .tips-container h3, .wholesale-tips-container h3 {
+            text-align: center;
+        }
+
+        .tips-list, .wholesale-tips-container ul, .product-tip {
+            list-style-type: none; /* Estilos de viñeta */
+            padding: 0;
+        }
+
+        .tips-list li, .wholesale-tips-container ul li {
+            margin-bottom: 10px;
+            padding-left: 20px; /* Añadir un poco de espacio a la izquierda */
+            position: relative;
+        }
+
+        .tips-list li:before, .wholesale-tips-container ul li:before {
+            content: "\2022"; /* Agregar viñeta */
+            color: #4b0082; /* Color de la viñeta */
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .wholesale-tips-container {
+            background-color: #d5b6d5;
+        }
+
+        .wholesale-tips-container:hover {
+            background-color: #d89fe0;
+        }
+
+        .wholesale-tips-container h3 {
+            text-align: center;
+        }
+
+        .product {
+            margin: 20px auto;
+            width: 30%; /* Cambia el ancho */
+            background-color: #ff8ae2f5;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .product img {
+            display: block;
+            margin: 0 auto;
+            width: 50%; /* Tamaño mediano */
+            border-radius: 50%; /* Borde circular */
+            margin-bottom: 20px;
+        }
+
+        .product-tip {
+            background-color: #d5b6d5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .product-tip h3 {
+            text-align: center;
+            color: #4b0082;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Restaurante "La Marchanta"
+        </h1> 
+    </header>
+</body>
+</html>
+
