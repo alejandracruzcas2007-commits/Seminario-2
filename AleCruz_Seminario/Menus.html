@@ -6,34 +6,127 @@
     <title>Menú principal</title>
     <link rel="icon" href="imagenes/Taco de pastor.png" type="imagen/png">
     <style>
-        body{
-            background-color: #c94c03;
-            margin: 12px;
-            padding: 20px;
-
-        }
+         body {
+        background-image: url(C:/AppServ/www/AleCruz_Seminario/imagenes/bordados.avif);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+    }
         header {
            padding: 12px;
             text-align:center;
             background-color: #e6f329a6;
             color: #662608;
         }   
-        
-        table {
-        padding: 10px;
-        text-align:center;
-        width: 100%; 
-        height: 100px;
-        border-collapse: collapse; 
-}
 
-p{
-    padding: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
-    font-style: oblique;
-    font-weight: bolder;
-}
+         nav a:hover{
+            color: purple;
+            font-weight:bold;
+        }
+
+        main{
+            overflow: hidden;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .tips-container, .wholesale-tips-container, .product {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Añade sombra */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .tips-container, .wholesale-tips-container {
+            width: 30%;
+            background-color: #f6b4bf;
+            font-size: 20px;
+        }
+
+        .tips-container:hover, .wholesale-tips-container:hover {
+            background-color: #ff96a8;
+        }
+
+        .tips-container h3, .wholesale-tips-container h3 {
+            text-align: center;
+        }
+
+        .tips-list, .wholesale-tips-container ul, .product-tip {
+            list-style-type: none; /* Estilos de viñeta */
+            padding: 0;
+        }
+
+        .tips-list li, .wholesale-tips-container ul li {
+            margin-bottom: 10px;
+            padding-left: 20px; /* Añadir un poco de espacio a la izquierda */
+            position: relative;
+        }
+
+        .tips-list li:before, .wholesale-tips-container ul li:before {
+            content: "\2022"; /* Agregar viñeta */
+            color: #4b0082; /* Color de la viñeta */
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .wholesale-tips-container {
+            background-color: #d5b6d5;
+        }
+
+        .wholesale-tips-container:hover {
+            background-color: #d89fe0;
+        }
+
+        .wholesale-tips-container h3 {
+            text-align: center;
+        }
+
+        .product {
+            margin: 20px auto;
+            width: 30%; /* Cambia el ancho */
+            background-color: #ff8ae2f5;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .product img {
+            display: block;
+            margin: 0 auto;
+            width: 50%; /* Tamaño mediano */
+            border-radius: 50%; /* Borde circular */
+            margin-bottom: 20px;
+        }
+
+        .product-tip {
+            background-color: #d5b6d5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .product-tip h3 {
+            text-align: center;
+            color: #4b0082;
+        }
+        
+        p{
+        padding: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        font-style: oblique;
+        font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -49,24 +142,50 @@ p{
     <p>Disfruta de nuestra variedad de platillos en nuestro menu especial, desde caldos hasta antojitos, hasta botanas y nuestras salsas picantes.</p>
 
     <p>Explora nuestros paquetes especiales</p>
-    <nav>
-    <table border="3">
-        <tbody>
-            <tr>
-                <th> <img src="imagenes/garbanzo.jpg" alt="sopa de garbanzo" width="20px" height="20px"> <a onclick="window.location.href='C:/AppServ/www/AleCruz_Seminario/Sopas.html'"> Caldos y/o consomes</a></th>
-            </tr>
-            <tr>
-                <th> <img src="imagenes/tinga.jpg" alt="tinga de pollo" width="20px" height="20px"> <a onclick="window.location.href='C:/AppServ/www/AleCruz_Seminario/Fuertes.html'"></a> Platos Fuertes</th>
-            </tr>
-            <tr>
-                <th> <img src="imagenes/garbanzo.jpg" alt="sopa de garbanzo" width="20px" height="20px"> <a </th>
-            </tr>
+    <div class="product" onmouseover="changeCursor(this)" onmouseout="resetCursor(this)">
+        <img src="imagenes/garbanzo.jpg" alt="Consome de garbanzo">
+        <div class="product-tip">
+            <a href="C:/AppServ/www/AleCruz_Seminario/Sopas.html"><h3> Caldos y/o Consomes.</h3></a>
+        </div>
+    </div>
 
-        </tbody>
-     </table>
-     </nav>
+     <div class="product" onmouseover="changeCursor(this)" onmouseout="resetCursor(this)">
+        <img src="imagenes/chiles rellenos.jpg" alt="chiles rellenos">
+        <div class="product-tip">
+            <a href="C:/AppServ/www/AleCruz_Seminario/Fuertes.html"><h3> Platos fuertes </h3></a>
+        </div>
+    </div>
+
+     <div class="product" onmouseover="changeCursor(this)" onmouseout="resetCursor(this)">
+        <img src="imagenes/pambazos.jpg" alt="pambazo rojo">
+        <div class="product-tip">
+            <a href="C:/AppServ/www/AleCruz_Seminario/antojitos.html"><h3> Antojos para la ocacion.</h3></a>
+        </div>
+    </div>
+
+    <div class="product" onmouseover="changeCursor(this)" onmouseout="resetCursor(this)">
+        <img src="imagenes/agua limon.webp" alt="agua de limon">
+        <div class="product-tip">
+            <a href="C:/AppServ/www/AleCruz_Seminario/bebidas.html"><h3> Bebidas y aguas frescas.</h3></a>
+        </div>
+    </div>
+
+    <div class="product" onmouseover="changeCursor(this)" onmouseout="resetCursor(this)">
+        <img src="imagenes/ate.jpeg" alt="ates de sabor">
+        <div class="product-tip">
+            <a href="C:/AppServ/www/AleCruz_Seminario/bebidas.html"><h3> postres al gusto :D</h3></a>
+        </div>
+    </div>
 </main>
-
+ <script>
+        function changeCursor(element) {
+            element.style.cursor = "pointer";
+        }
+        
+        function resetCursor(element) {
+            element.style.cursor = "default";
+        }
+    </script>
 </body>
 
 <footer> <p>  2026 Derechos Reservados &copy; SA de CV</p></footer> 

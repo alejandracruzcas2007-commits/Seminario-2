@@ -32,7 +32,23 @@
             text-align:center;
             background-color: white;
             height: 100px;
+    
     }
+
+    .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+     .product {
+            margin: 20px auto;
+            width: 30%; /* Cambia el ancho */
+            background-color: #f53a0bf5;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
     .titulo{
         font-family: Goudy Stout;
@@ -46,10 +62,16 @@
         font-family: Matura MT Script Capitals;
     }
 
-    button{
-        margin-bottom: 20px;
+    h2{
+        text-align: center;
     }
-
+    
+    a{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        container-type: unset;
+        
+    }
     footer {
          clear: both;
 text-align: center;
@@ -67,7 +89,11 @@ color: rgb(56, 2, 2);
     </header>
      <h2 class="texto"> La mejor comida mexicana que puedes encontrar  </h2>
 
-    <a onclick="window.location.href='C:/AppServ/www/AleCruz_Seminario/Inicio.html'"> Entrar a la pagina</a>
+     <div class="product">
+
+         <a onclick="window.location.href='C:/AppServ/www/AleCruz_Seminario/Inicio.html'"><h3>Entrar a la pagina</h3></a>
+
+     </div>
 </body>
 <footer> <p>2026 Derechos Reservados &copy; SA de CV</p> </footer>
 </html>
