@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago y pedido</title>
+    <link rel="icon" href="imagenes/Taco de pastor.png" type="imagen/png">
+<style>
+ body {
+        background-image: url(C:/AppServ/www/AleCruz_Seminario/imagenes/margen1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+    }
+        header{
+            padding: 12px;
+            text-align:center;
+            background-color: #fafafa00;
+            color: #ee520a;
+        }
+
+        .pago{
+            background-color: rgb(248, 229, 53);
+        }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Restaurante "La Marchanta" </h1> 
+        <p>☆*: .｡. o(≧▽≦)o .｡.:*☆</p>
+
+<main>
+
+    <section>
+        <for i="1", i="5", i++>
+        <h3>Pedido</h3>
+        <form>
+       <div> <p>Ingresa tu direccion</p> <input type="text" placeholder="________________________"></div>
+
+      <div> <p>Ingrese su numero telefonico</p> <input type="text" placeholder="+55">
+    </div>
+        
+    <h3>Pago</h3>
+    <div> <p>Indique con que tipo de tarjeta va a pagar</p> 
+        <select name="numers">
+            <option value="one">Credito</option>
+            <option value="two">Debito</option>
+        </select>
+        </div>
+
+        <div> <p>Que tipo de tarjeta usted usa</p>
+           <select name="numers">
+            <option value="one">Master Card</option>
+            <option value="two">Visa</option>
+            <option value="three">American Express</option>
+        </select> 
+        </div>
+
+          <div>  <p>Ingres los 16 digitos de su tarjeta</p> 
+      <div ><input type="text" placeholder="ingresar sus digitos"></div>
+      
+      </div>
+
+        <div> <p>Ingrese su CVV de su tarjeta</p> <input type="text" placeholder="CVV"></div>
+
+      <br> <br>
+      <div class="pago">
+      <a  href="C:/AppServ/www/AleCruz_Seminario/ticket.html">Confirmar pago</a>
+      </div>
+        </form>
+    </for>
+
+    </section>
+</main>
+
+
+<footer> <p>  2026 Derechos Reservados &copy; SA de CV</p>
+
+</footer> 
+
+</header>
+</body>
+</html>

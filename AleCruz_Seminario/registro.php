@@ -1,1 +1,1 @@
-<php?$_COOKIE
+
